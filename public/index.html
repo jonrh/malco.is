@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Málco ehf.">
+
+    <title>Málco</title>
+    <link rel="icon" data-emoji="🖌" type="image/png"> <!-- See favicon script below -->
+
+    <style type="text/css">
+        body {
+            font-size: 22px;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, rgba(76, 107, 122, 0.50), rgba(76, 107, 122, 0.8), #4c6b7a);
+
+            margin: 0;
+        }
+
+        h1, h2, p {
+            color: #242424;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2em;
+        }
+
+        #logo {
+            width: 100%;
+
+            /* White, 20% transparent */
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="container">
+    <h1>Löggiltur málarameistari</h1>
+    <ul>
+        <li>Finnbogi Þorsteinsson, <a href="tel:+3546953384">770 1532</a></li>
+        <li>Málco ehf. - kennitala: 701003-3220</li>
+    </ul>
+</div>
+
+<!-- Emoji as favicon by Kristján Oddsson. https://koddsson.com/posts/emoji-favicon/ -->
+<script>
+  const favicon = document.querySelector("link[rel=icon]");
+  if (favicon) {
+    const emoji = favicon.getAttribute("data-emoji");
+    if (emoji) {
+      const canvas = document.createElement("canvas");
+      canvas.height = 64;
+      canvas.width = 64;
+      const ctx = canvas.getContext("2d");
+      ctx.font = "64px serif";
+      ctx.fillText(emoji, 0, 64);
+      favicon.href = canvas.toDataURL();
+    }
+  }
+</script>
+
+</body>
+</html>

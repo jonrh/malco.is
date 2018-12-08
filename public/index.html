@@ -10,14 +10,13 @@
         body {
             font-size: 22px;
             font-family: 'Open Sans', sans-serif;
-            background: linear-gradient(135deg, rgba(54, 97, 156, 0.50), rgba(54, 97, 156, 0.8), rgb(54, 97, 156));
+            background: linear-gradient(135deg, rgba(54, 97, 156, 0.1), rgba(54, 97, 156, 0.2), rgba(54, 97, 156, 0.4));
 
             margin: 0;
         }
 
-        h1 {
-            color: #242424;
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        a {
+            color: black;
         }
 
         #container {
@@ -30,18 +29,38 @@
             height: 80%;
             padding: 2em;
         }
+
+        #malco_logo {
+            width: 60%;
+        }
+
+        #phoneemail {
+            font-size: 1.2em;
+        }
+
+        @media screen and (max-width: 768px) {
+            #malco_logo {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
 
 <div id="container">
-    <h1>Málco ehf.</h1>
+    <img src="malco_logo_2000px.png" id="malco_logo" alt="Málco">
+    <h2>Alhliða málningarþjónusta</h2>
 
-    <p>
-        Finnbogi Þorsteinsson, sími: <a href="tel:+3546953384">695 3384</a> <br /><br />
+    <p id="phoneemail">
+        Sími: <a href="tel:+3546953384">695-3384</a> <br />
+        Póstur: <a href="mailto:malco@malco.is?Subject=Fyrirspurn">malco@malco.is</a>
+    </p>
+
+    <p id="about">
+        Finnbogi Þorsteinsson <br />
         Löggiltur málarameistari <br />
-        Kennitala: 701003-3220
+        Málco ehf., kt: 701003-3220 <br />
     </p>
 </div>
 
